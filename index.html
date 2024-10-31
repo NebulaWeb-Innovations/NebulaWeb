@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NebulaWeb Innovations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0B0C2A;
+            color: white;
+        }
+        header {
+            background-color: #1F2A44;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #00D4FF;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .section img:hover {
+            transform: scale(1.05);
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .service {
+            background-color: #1F2A44;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service h3 {
+            color: #00D4FF;
+        }
+        footer {
+            background-color: #1F2A44;
+            padding: 20px;
+            text-align: center;
+            color: #999;
+        }
+        footer a {
+            margin: 0 10px;
+        }
+        footer img {
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+        footer img:hover {
+            transform: scale(1.1);
+        }
+        /* Animación de desplazamiento */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        // Script para animación al hacer scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                if (position - window.innerHeight <= 0) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <img src="Nebula_Logo.png" alt="NebulaWeb Innovations Logo">
+        <h1>NebulaWeb Innovations</h1>
+        <p>Diseño web y gestión de redes sociales</p>
+    </header>
+
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="servicios" class="section fade-in">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Diseño Web</h3>
+                <img src="Diseño web.jpg" alt="Equipo de trabajo">
+                <p>Desarrollo de sitios web modernos y funcionales.</p>
+            </div>
+            <div class="service">
+                <h3>Marketing Digital</h3>
+                <img src="Marketing digital.jpg" alt="Marketing Digital">
+                <p>Gestión de redes sociales y campañas publicitarias.</p>
+            </div>
+            <div class="service">
+                <h3>Consultoría</h3>
+                <img src="Consultoria.jpg" alt="Consultoría en Estrategias">
+                <p>Asesoría en estrategias digitales personalizadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros" class="section fade-in">
+        <h2>Sobre Nosotros</h2>
+        <p>En NebulaWeb Innovations, ofrecemos soluciones digitales innovadoras para potenciar tu presencia en línea.</p>
+    </section>
+
+    <section id="contacto" class="section fade-in">
+        <h2>Contacto</h2>
+        <p>¿Interesado en trabajar con nosotros? Contáctanos: <a href="mailto:contacto@nebulaweb.com">contacto@nebulaweb.com</a></p>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 NebulaWeb Innovations. Todos los derechos reservados.</p>
+            <p>Síguenos en:</p>
+            <a href="https://www.facebook.com/profile.php?id=61567631950019&mibextid=ZbWKwL" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/nebulaweb_innovations/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" width="38" height="38">
+            </a>
+            <a href="https://wa.me/573332414755?text=%C2%A1Hola!%20Estoy%20interesado%20en%20los%20servicios%20que%20ofreces." target="_blank">
+                <img src="whatsapp-icon.png" alt="Whatsapp" width="50" height="50">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
