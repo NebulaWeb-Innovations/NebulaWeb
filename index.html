@@ -41,6 +41,45 @@
             padding: 40px;
             text-align: center;
         }
+        .menu {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #0B0C2A, #1F2A44);
+    padding: 10px 0;
+    margin: 0 auto;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #F8DFF0;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
         .section img {
             width: 100%;
             max-width: 600px;
@@ -130,11 +169,13 @@
         <p>Diseño web y gestión de redes sociales</p>
     </header>
 
-    <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <p>
+        <ul class="menu">
+        <li><a href="#servicios">Servicios 💻</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros 💼</a></li>
+        <li><a href="#contacto">Contacto 📒</a></li>
+        </ul>
+    </p>
 
     <section id="servicios" class="section fade-in">
         <h2>Nuestros Servicios</h2>
