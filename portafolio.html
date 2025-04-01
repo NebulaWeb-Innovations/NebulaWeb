@@ -148,6 +148,18 @@
             transform: translateY(0);
         }
     </style>
+        <script>
+        // Script para animación al hacer scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                if (position - window.innerHeight <= 0) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -167,10 +179,10 @@
         <section class="portafolio">
             <h1>Portafolio</h1>
             <div class="proyecto1">
-                <img src="ruta-a-imagen-proyecto1.jpg" alt="Proyecto 1">
+                <img src="Nebula_Logo.png" alt="Proyecto 1">
                 <h2>Proyecto 1</h2>
                 <p>Descripción breve del proyecto 1.</p>
-                <a href="enlace-proyecto1" target="_blank">Ver proyecto</a>
+                <a href="index.html" target="_blank">Ver proyecto</a>
             </div>
             <!-- Repite el bloque .proyecto para más proyectos -->
         </section>
