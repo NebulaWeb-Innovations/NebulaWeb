@@ -89,13 +89,13 @@ m<!DOCTYPE html>
         .section img:hover {
             transform: scale(1.05);
         }
-        .section {
+        .proyectos {
             display: flex;
             justify-content: center;
             gap: 30px;
             flex-wrap: wrap;
         }
-        .section {
+        .proyecto {
             background-color: #1F2A44;
             padding: 20px;
             border-radius: 10px;
@@ -103,10 +103,10 @@ m<!DOCTYPE html>
             margin-top: 20px;
             transition: transform 0.3s;
         }
-        .section:hover {
+        .proyecto:hover {
             transform: scale(1.05);
         }
-        .section h1 {
+        .proyecto h1 {
             color: #00D4FF;
         }
         footer {
@@ -176,9 +176,10 @@ m<!DOCTYPE html>
         </ul>
     </p>
     <main>
-        <section class="portafolio">
+        <section id="proyectoss" class="section fade-in">
             <h1>Portafolio</h1>
-            <div class="proyecto1">
+            <div class="proyectos">
+                <div class="proyecto">
                 <img src="proyecto1.png" alt="NebulaWeb Innovations">
                 <h2>NebulaWeb Innovations</h2>
                 <p>Nebula Web Innovations es un sitio web diseñado para ofrecer soluciones digitales innovadoras en desarrollo web, marketing digital y consultoría tecnológica.</p><br>
@@ -190,6 +191,7 @@ m<!DOCTYPE html>
                 <p>✅ Publicado en GitHub Pages para accesibilidad global </p><br>
                 <p>Este es el primer proyecto de la agencia y marca el inicio de una serie de desarrollos enfocados en la innovación y la transformación digital.</p><br>
                 <a href="https://nebulaweb-innovations.github.io/NebulaWeb/index.html" target="_blank" style="color:white;">Entrar Al Sitio Web.</a>
+            </div>
             </div>
             <!-- Repite el bloque .proyecto para más proyectos -->
         </section>
